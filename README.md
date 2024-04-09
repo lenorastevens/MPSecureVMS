@@ -6,9 +6,7 @@ The software I created is protected with registration/login system. Initial regi
 
 I wanted to write this software in order to learn and practice creating software with user login and be able to practice limiting control according to the user rank.  The process of writing this software stretched my ablities and created many learning opportunites. 
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of how created the Relational Database.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Mastery Protein Vendor Management System Demo](https://youtu.be/MfT1TzM_Iec)
 
 # Relational Database
 
