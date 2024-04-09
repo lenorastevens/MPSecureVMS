@@ -8,6 +8,11 @@ I wanted to write this software in order to learn and practice creating software
 
 [Mastery Protein Vendor Management System Demo](https://youtu.be/MfT1TzM_Iec)
 
+Logins for development purposes:
+Email: salesperson@mpvms.com Login: Test@1
+Email: manager@mpvms.com Login: Test@1
+Email: admin@mpvms.com Login: Test@1
+
 # Relational Database
 
 - SQL Local Database
