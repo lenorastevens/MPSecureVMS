@@ -1,0 +1,82 @@
+﻿@page
+@model MPSecureVMS.Pages.Vendors.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete Vendor</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <hr />
+    <dl class="row col-md-6 bg-white mx-auto rounded border p-3">
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.VendorName)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.VendorName)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.Contact)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.Contact)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.Position)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.Position)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.ContactPhone)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.ContactPhone)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.ContactEmail)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.ContactEmail)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.VendorAddress)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.VendorAddress)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.City)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.City)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.State)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.State)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.ZipCode)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.ZipCode)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.Notes)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.Notes)
+        </dd>
+        <form method="post">
+            <input type="hidden" asp-for="Vendor.VendorId" />
+            <input type="submit" value="Delete" class="mt-2 btn btn-danger" /> |
+            <a asp-page="./Index">Back to List</a>
+        </form>
+    </dl>
+    
+   
+</div>

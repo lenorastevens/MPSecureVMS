@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap'); 
+
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: "Signika", sans-serif;
+    margin-bottom: 60px;
+    background: url("/images/cansBackgroung.png");
+    background-size: cover;
+}
+
+#home-title {
+    padding: 2%;
+    font-weight: 900;
+    font-size: 10vh;
+    background: url("/images/peakPoetry.png");
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#home-logo {
+    width: 30%;
+    display: block;
+    margin: auto;
+    color: aqua;
+}

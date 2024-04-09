@@ -1,0 +1,89 @@
+﻿@page
+@model MPSecureVMS.Pages.Vendors.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Vendor List</h1>
+
+<p>
+    <a asp-page="Create">Add New Vendor</a>
+</p>
+
+<form>
+    <p>
+        Search: <input type="text" asp-for="SearchString" placeholder="Vendor/Contact/Notes" />
+        <input type="submit" value="Filter" />
+        <select asp-for="VendorState" asp-items="Model.States">
+            <option value="">All</option>
+        </select>
+    </p>
+</form>
+
+<table class="table bg-white mx-auto rounded border p-3">
+    <thead>
+        <tr>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.VendorNameSort">
+                    @Html.DisplayNameFor(model => model.Vendor[0].VendorName)
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.ContactSort">
+                    @Html.DisplayNameFor(model => model.Vendor[0].Contact)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vendor[0].Position)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vendor[0].ContactPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Vendor[0].ContactEmail)
+            </th>            
+            <th>
+                <a asp-page="./Index" asp-route-sortOrder="@Model.StateSort">
+                    @Html.DisplayNameFor(model => model.Vendor[0].State)
+                </a>
+            </th>            
+            <th>
+                @Html.DisplayNameFor(model => model.Vendor[0].Notes)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Vendor) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VendorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Position)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactEmail)
+            </td>            
+            <td>
+                @Html.DisplayFor(modelItem => item.State)
+            </td>            
+            <td>
+                @Html.DisplayFor(modelItem => item.Notes)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.VendorId">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.VendorId">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.VendorId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

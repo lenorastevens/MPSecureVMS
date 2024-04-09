@@ -1,0 +1,80 @@
+﻿@page
+@model MPSecureVMS.Pages.Vendors.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Vendor</h4>
+    <hr />
+    <dl class="row col-md-6 bg-white mx-auto rounded border p-3">
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.VendorName)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.VendorName)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.Contact)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.Contact)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.Position)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.Position)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.ContactPhone)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.ContactPhone)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.ContactEmail)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.ContactEmail)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.VendorAddress)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.VendorAddress)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.City)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.City)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.State)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.State)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.ZipCode)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.ZipCode)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Vendor.Notes)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Vendor.Notes)
+        </dd>
+        <div>
+            <a asp-page="./Edit" asp-route-id="@Model.Vendor.VendorId">Edit</a> |
+            <a asp-page="./Index">Back to List</a>
+        </div>
+    </dl>
+</div>
+
